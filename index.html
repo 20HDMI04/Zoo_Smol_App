@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand mx-4" href="#">Zoo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#" id="animalAnimals">Animals</a>
+          <a class="nav-item nav-link" href="#" id="animalSpecies">Animals by Species</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="mx-4" id="appTitle">Animals</h1>
+
+    <template id="animalTableTop">
+      <table class="table table-striped m-3">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Species</th>
+          <th>Age</th>
+          <th>Delete Animals</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    </template>
+
+    <template id="animalTableRow">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <button class="btn btn-danger" id="deleteButton">Delete</button>
+        </td>
+      </tr>
+    </template>
+
+    <div id="app" class="container justify-content-center m-5"></div> 
+    <script type="module" src="src/main.ts" defer></script>
+  </body>
+</html>
